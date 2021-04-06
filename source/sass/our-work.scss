@@ -1,0 +1,42 @@
+.our-work {
+  height: 506px;
+  background: url(../img/bg/main-bg.png) no-repeat center top;
+  background-size: 320px 506px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.our-work h2 {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin-top:73px;
+}
+
+.our-work__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.our-work__button {
+  height: 103px;
+  text-align: start;
+  padding: 24px 100px 31px 30px;
+  font-size: 19px;
+  line-height: 24px;
+  margin:0 0 0 0;
+  color: #ffffff;
+  border: none;
+}
+
+
+.interior {
+  background:  #63D1BB url(../img/bg/interior.svg) no-repeat center  left 95%;
+}
+
+.toy {
+  background:  #56C3B2 url(../img/bg/toy.svg) no-repeat center left 95%;
+}

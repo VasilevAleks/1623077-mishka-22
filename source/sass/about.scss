@@ -1,0 +1,90 @@
+.about {
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 29px;
+  margin-right: 29px;
+
+}
+
+.about__tittle {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 82px;
+}
+.about__list {
+  padding:0;
+  margin: 0;
+
+}
+.about__item {
+  margin-bottom: 83px;
+  position: relative;
+
+  &:last-child{
+    margin-bottom: 58px;
+  }
+  &:first-child:before {
+    content: "";
+    width: 33px;
+    height: 38px;
+    background-image: url(../img/icons/ecologic.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom:50px;
+  }
+  &:nth-child(2):before {
+    content: "";
+    width: 47px;
+    height: 27px;
+    background-image: url(../img/icons/money.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom:50px;
+  }
+  &:nth-child(3):before {
+    content: "";
+    width: 34px;
+    height: 27px;
+    background-image: url(../img/icons/like.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom:50px;
+  }
+  &:nth-child(4):before {
+    content: "";
+    width: 35px;
+    height: 34px;
+    background-image: url(../img/icons/handmade.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom:50px;
+  }
+  &:nth-child(5):before {
+    content: "";
+    width: 55px;
+    height: 23px;
+    background-image: url(../img/icons/nation.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom:50px;
+  }
+  &:last-child:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/icons/present.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom:50px;
+  }
+
+}
+
