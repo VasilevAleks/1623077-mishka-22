@@ -1,12 +1,12 @@
-.top{
+.top {
   display: flex;
   flex-direction: column;
   margin-left: 29px;
   margin-right: 29px;
 
-   & img{
+  & img {
     align-self: center;
-   }
+  }
 }
 
 .top__item {
@@ -17,14 +17,16 @@
 
 .top__week {
   line-height: 20px;
-  color: #63D1BB;
+  color: #63d1bb;
   margin-bottom: 20px;
 }
+
 .top__description {
   font-size: 15px;
   color: #444444;
   margin-bottom: 26px;
 }
+
 .top__specifications {
   font-size: 15px;
   line-height: 20px;
@@ -34,7 +36,6 @@
 
   & tr {
     height: 39px;
-
   }
 
   & th {
@@ -45,21 +46,23 @@
     text-align: start;
     border-bottom: 1px solid#ECECEC;
   }
+
   & td {
     border-bottom: 1px solid#ECECEC;
   }
 }
 
 .top__price {
-  margin-top:26px;
+  margin-top: 26px;
   margin-bottom: 25px;
   text-align: center;
 }
+
 .top__button {
   font-size: 18px;
   line-height: 20px;
   padding-top: 16px;
-  padding-bottom:16px;
+  padding-bottom: 16px;
   border: 2px solid #444444;
   background-color: #ffffff;
 }

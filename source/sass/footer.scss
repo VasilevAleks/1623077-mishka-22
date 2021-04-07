@@ -1,19 +1,20 @@
-.main-footer {
-  height: 160px;
-  background-color: #F1F1F1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-}
-
-.social-net {
+.footer__social-net {
   display: flex;
   gap: 41px;
-  padding: 0;
+  height: 28px;
+  margin-top: 25px;
+
+  @extend %style-none;
 }
-.button_copyright {
+
+
+.footer__copyright {
+  margin-top: 42px;
+  margin-bottom: 31px;
+  height: 34px;
+}
+
+.footer__copyright-button {
   font-size: 19px;
   line-height: 18px;
 }

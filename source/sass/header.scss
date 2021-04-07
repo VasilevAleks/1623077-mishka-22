@@ -4,26 +4,27 @@
   width: 100%;
   display: grid;
   grid-template-columns: 5fr 1fr;
-  outline: 5px solid aqua;
-
 }
+
 .page-header__logo {
   text-align: center;
   grid-column: 1/2;
 }
-.page-header__toggle--close {
+
+.page-header__toggle-close {
   height: 20px;
   width: 21px;
   border: none;
-  background: url(../img/icons/menu-close.svg) no-repeat;
+  background: url("../img/icons/menu-close.svg") no-repeat;
   grid-column: 2/3;
   text-align: end;
 }
-.page-header__toggle--open {
+
+.page-header__toggle-open {
   height: 20px;
   width: 21px;
   border: none;
-  background: url(../img/icons/menu-open.svg) no-repeat;
+  background: url("../img/icons/menu-open.svg") no-repeat;
   text-align: end;
   grid-column: 2/3;
 }
