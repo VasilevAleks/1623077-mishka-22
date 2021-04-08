@@ -14,7 +14,7 @@
 }
 
 .about__list {
-  @extend %style-none;
+  @include style-none;
 }
 
 .about__item {
