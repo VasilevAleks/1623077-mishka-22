@@ -1,0 +1,35 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  border: 0 none;
+}
+
+.feedback__contacts {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.feedback__block {
+  position: relative;
+
+  & hr {
+    position: absolute;
+    left: 80px;
+    top: 0;
+    border-color: #62d1ba;
+    background-color: #62d1ba;
+  }
+}
+
+.feedback__contacts-input {
+  border: none;
+  line-height: 18px;
+  border-bottom: 2px solid #444444;
+  height: 52px;
+
+  & ::placeholder {
+    font-weight: 400;
+  }
+}

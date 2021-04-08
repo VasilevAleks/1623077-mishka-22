@@ -1,0 +1,41 @@
+.full-name {
+  display: flex;
+  flex-direction: column;
+  border: 0 none;
+  position: relative;
+}
+
+.full-name__title {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  & hr {
+    position: absolute;
+    left: 80px;
+    top: 0;
+    border-color: #62d1ba;
+    background-color: #62d1ba;
+  }
+}
+
+
+.full-name__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-name__name {
+  line-height: 18px;
+}
+
+.full-name__name-input {
+  border: none;
+  border-bottom: 2px solid #444444;
+  height: 52px;
+
+  & ::placeholder {
+    font-weight: 400;
+  }
+}
