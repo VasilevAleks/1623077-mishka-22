@@ -5,7 +5,7 @@
 }
 
 .main-nav__list {
-  @extend %style-none;
+  @include style-none;
 }
 
 .main-nav__item {

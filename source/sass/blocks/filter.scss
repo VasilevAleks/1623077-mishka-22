@@ -1,0 +1,36 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__type {
+  border: 0 none;
+  position: relative;
+
+  & hr {
+    position: absolute;
+    left: 80px;
+    bottom: 60px;
+    border-color: #62d1ba;
+    background-color: #62d1ba;
+  }
+}
+
+.filter__name {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.filter__radio {
+  @include style-none;
+  color: #63d1bb;
+
+  & ::after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    border-top: 1px solid #9ec1d4;
+  }
+}
