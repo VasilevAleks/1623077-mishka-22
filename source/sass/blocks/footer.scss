@@ -1,0 +1,20 @@
+.footer__social-net {
+  display: flex;
+  gap: 41px;
+  height: 28px;
+  margin-top: 25px;
+
+  @include style-none;
+}
+
+
+.footer__copyright {
+  margin-top: 42px;
+  margin-bottom: 31px;
+  height: 34px;
+}
+
+.footer__copyright-button {
+  font-size: 19px;
+  line-height: 18px;
+}
