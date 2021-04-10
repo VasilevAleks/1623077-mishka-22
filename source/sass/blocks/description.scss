@@ -1,0 +1,24 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  height: 302px;
+}
+
+.description__title {
+  @include style-none;
+  height: 177px;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-top: 74px;
+  margin-left: -29px;
+}
+
+.description__form {
+  margin-top: 36px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 29px;
+}

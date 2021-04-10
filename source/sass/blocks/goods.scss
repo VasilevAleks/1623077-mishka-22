@@ -1,0 +1,20 @@
+.goods {
+  margin-left: 29px;
+  justify-content: start;
+}
+
+.goods__title {
+  @include style-none;
+  display: flex;
+  height: 177px;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+  align-items: center;
+  justify-content: center;
+  margin-left: -29px;
+}
+
+.goods__list {
+  @include style-none;
+}

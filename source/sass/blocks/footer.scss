@@ -1,12 +1,10 @@
 .footer__social-net {
+  @include style-none;
   display: flex;
   gap: 41px;
   height: 28px;
   margin-top: 25px;
-
-  @include style-none;
 }
-
 
 .footer__copyright {
   margin-top: 42px;
