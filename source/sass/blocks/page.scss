@@ -5,8 +5,14 @@
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
-  width: 100%;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__header {
+
+  outline: 5px solid aqua;
 }
 
 .page__footer {
@@ -16,4 +22,5 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  outline: 5px solid aqua;
 }
