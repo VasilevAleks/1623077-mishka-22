@@ -10,17 +10,11 @@
   flex-direction: column;
 }
 
-.page__header {
-
-  outline: 5px solid aqua;
-}
-
 .page__footer {
   height: 160px;
-  background-color: #f1f1f1;
+  background-color: $bg-footer;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  outline: 5px solid aqua;
 }

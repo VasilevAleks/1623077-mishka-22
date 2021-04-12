@@ -9,14 +9,14 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $sub-bg-color;
 
   & hr {
     position: absolute;
     left: 80px;
     top: 0;
-    border-color: #62d1ba;
-    background-color: #62d1ba;
+    border-color: $main-bg-color;
+    background-color: $main-bg-color;
   }
 }
 
@@ -32,7 +32,7 @@
 
 .full-name__name-input {
   border: none;
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid $sub-color;
   height: 52px;
 
   & ::placeholder {

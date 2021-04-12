@@ -8,7 +8,7 @@
     line-height: 18px;
     font-weight: 400;
     padding: 7px 23px 9px 11px;
-    border: 2px solid #444444;
+    border: 2px solid $sub-color;
 
     & ::placeholder {
       font-weight: 400;
@@ -22,13 +22,13 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $sub-bg-color;
 
   & hr {
     position: absolute;
     left: 80px;
     top: 0;
-    border-color: #62d1ba;
-    background-color: #62d1ba;
+    border-color: $main-bg-color;
+    background-color: $main-bg-color;
   }
 }

@@ -8,7 +8,7 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $sub-bg-color;
 }
 
 .feedback__block {
@@ -18,15 +18,15 @@
     position: absolute;
     left: 80px;
     top: 0;
-    border-color: #62d1ba;
-    background-color: #62d1ba;
+    border-color: $main-bg-color;
+    background-color: $main-bg-color;
   }
 }
 
 .feedback__contacts-input {
   border: none;
   line-height: 18px;
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid $sub-color;
   height: 52px;
 
   & ::placeholder {
