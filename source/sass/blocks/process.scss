@@ -1,0 +1,50 @@
+.process {
+  display: flex;
+  flex-direction: column;
+}
+
+.process__title {
+  margin-left: 91px;
+  margin-right: 39px;
+  font-size: 17px;
+  line-height: 24px;
+  position: relative;
+  margin-bottom: 26px;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/icons/cam.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    left: -55px;
+  }
+}
+
+.process__img {
+  width: 260px;
+  height: 150px;
+  margin-bottom: 22px;
+}
+
+.process__discraption {
+  margin-left: 34px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $sub-color;
+  margin-bottom: 41px;
+  overflow-wrap: break-word;
+}
+
+.process__button {
+  margin: 1px 34px 91px;
+  border: 2px solid $sub-color;
+  color: $sub-color;
+  font-size: 18px;
+  line-height: 16px;
+  background-color: $main-white;
+  padding: 11px 18px;
+}

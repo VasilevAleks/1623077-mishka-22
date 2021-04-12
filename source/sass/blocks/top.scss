@@ -17,13 +17,13 @@
 
 .top__week {
   line-height: 20px;
-  color: #63d1bb;
+  color: $sub-bg-color;
   margin-bottom: 20px;
 }
 
 .top__description {
   font-size: 15px;
-  color: #444444;
+  color: $sub-color;
   margin-bottom: 26px;
 }
 
@@ -44,11 +44,11 @@
     font-weight: 400;
     width: 97px;
     text-align: start;
-    border-bottom: 1px solid#ECECEC;
+    border-bottom: 1px solid $border-top;
   }
 
   & td {
-    border-bottom: 1px solid#ECECEC;
+    border-bottom: 1px solid $border-top;
   }
 }
 
@@ -63,6 +63,6 @@
   line-height: 20px;
   padding-top: 16px;
   padding-bottom: 16px;
-  border: 2px solid #444444;
-  background-color: #ffffff;
+  border: 2px solid $sub-color;
+  background-color: $main-white;
 }

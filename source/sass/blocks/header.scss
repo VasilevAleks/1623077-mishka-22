@@ -1,14 +1,9 @@
 .page-header {
   margin-left: 29px;
   margin-right: 29px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-}
-
-.page-header__logo {
-  text-align: center;
-  grid-column: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .page-header__toggle-close {
