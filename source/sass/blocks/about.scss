@@ -15,7 +15,16 @@
 
 .about__list {
   @include style-none;
+
+  @media (min-width: $tablet-width) {
+
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
+
 
 .about__item {
   margin-bottom: 83px;
@@ -89,5 +98,14 @@
     background-position: 0 0;
     position: absolute;
     bottom: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    margin-bottom: 100px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
   }
 }

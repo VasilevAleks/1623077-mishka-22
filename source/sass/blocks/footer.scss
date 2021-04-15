@@ -1,15 +1,42 @@
+.footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    margin-top: 55px;
+    justify-content: space-around;
+  }
+}
+
+.footer__logo {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
 .footer__social-net {
   @include style-none;
   display: flex;
   gap: 41px;
   height: 28px;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+
+
+    margin-top: 0;
+  }
 }
 
 .footer__copyright {
   margin-top: 42px;
   margin-bottom: 31px;
   height: 34px;
+
+  @media (min-width: $tablet-width) {
+
+    margin-top: -15px;
+    outline: 5px solid aquamarine;
+  }
 }
 
 .footer__copyright-button {
