@@ -13,7 +13,12 @@
   background: url("../img/icons/menu-close.svg") no-repeat;
   grid-column: 2/3;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
+
 
 .page-header__toggle-open {
   height: 20px;
@@ -22,4 +27,25 @@
   background: url("../img/icons/menu-open.svg") no-repeat;
   text-align: end;
   grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+  }
 }
