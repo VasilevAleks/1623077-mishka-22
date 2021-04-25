@@ -1,0 +1,85 @@
+
+.filter-color {
+  border: 0 none;
+  position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    background-color: $bg-form;
+  }
+}
+
+
+.filter-color__name {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $sub-bg-color;
+
+
+  @media (min-width: $tablet-width) {
+    float: left;
+    margin-top: 30px;
+    padding-right: 150px;
+  }
+}
+
+
+.filter-color__list {
+  @include style-none;
+
+  @media (min-width: $tablet-width) {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 228px;
+  }
+}
+
+
+.filter-color__items {
+  position: relative;
+  margin-left: 61px;
+  margin-bottom: 24px;
+
+  &:first-child {
+    margin-top: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
+
+.filter-color__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: -13px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $sub-color;
+}
+
+.filter-color__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  width: 23px;
+  height: 16px;
+  background: url("../../img/icons/check-box-tick.svg") no-repeat;
+}

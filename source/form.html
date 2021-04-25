@@ -8,11 +8,11 @@
   <body class="page__body">
     <header class="page__header">
       <div class="container">
-        <div class="page-header current">
+        <div class="page-header">
           <h1 class="visually-hidden">
             "Магазин "Мишка"
           </h1>
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </a>
           <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
@@ -55,14 +55,12 @@
                   Бесплатная доставка по России
                 </a>
               </li>
-            </ul>
-            <ul class="main-nav__list sub-menu">
-              <li class="main-nav__item">
+              <li class="main-nav__item sub-menu">
                 <a class="main-nav__link" href="#">
                   Новые поступления
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item sub-menu">
                 <a class="main-nav__link" href="#">
                   Распродажа
                 </a>
@@ -70,14 +68,14 @@
             </ul>
           </div>
         </nav>
-        <div class="page-header">
-          <a class="page-header__logo">
+        <div class="page-header not-show">
+          <a class="page-header__logo" href="index.html">
             <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </a>
           <button class="page-header__toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
       </div>
-    </header>
+  </header>
     <main class="page__main">
       <div class="container">
         <div class="description">
@@ -90,48 +88,48 @@
         </div>
         <section class="filter">
           <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter__type">
-              <legend class="filter__name">ТИП</legend><span class="scale"></span>
-              <ul class="filter__list">
-                <li class="filter__radio-item">
-                  <input class="visually-hidden filter__input" type="radio" name="work" id="filter__for-home" checked>
-                  <label for="filter__for-home">Аксессуар для интерьера</label>
+            <fieldset class="filter-type">
+              <legend class="filter-type__name">ТИП</legend><span class="scale"></span>
+              <ul class="filter-type__list">
+                <li class="filter-type__radio">
+                  <input class="visually-hidden filter-type__input" type="radio" name="work" id="filter-type__for-home" checked>
+                  <label for="filter-type__for-home">Аксессуар для интерьера</label>
                 </li>
-                <li class="filter__radio-item">
-                  <input class="visually-hidden filter__input" type="radio" name="work" id="filter__for-child">
-                  <label for="filter__for-child">Детская игрушка</label>
+                <li class="filter-type__radio">
+                  <input class="visually-hidden filter-type__input" type="radio" name="work" id="filter-type__for-child">
+                  <label for="filter-type__for-child">Детская игрушка</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__type">
-              <legend class="filter__name">ЦВЕТ</legend>
+            <fieldset class="filter-color">
+              <legend class="filter-color__name">ЦВЕТ</legend>
               <span class="scale"></span>
-                <ul class="filter__list">
-                  <li class="filter__color-items">
-                    <input class="visually-hidden filter__checkbox" type="checkbox" name="white" id="filter__white" checked>
-                    <label for="filter__white">Белый</label>
-                  </li>
-                  <li class="filter__color-items">
-                    <input class="visually-hidden filter__checkbox" type="checkbox" name="gray" id="filter__gray" checked>
-                    <label for="filter__gray">Серый</label>
-                  </li>
-                  <li class="filter__color-items">
-                    <input class="visually-hidden filter__checkbox" type="checkbox" name="tiffany" id="filter__tiffany">
-                    <label for="filter__tiffany">"Тиффани"</label>
-                  </li>
-                  <li class="filter__color-items">
-                    <input class="visually-hidden filter__checkbox" type="checkbox" name="black" id="filter__black">
-                    <label for="filter__black">Черный</label>
-                  </li>
-                  <li class="filter__color-items">
-                    <input class="visually-hidden filter__checkbox" type="checkbox" name="pink" id="filter__pink">
-                    <label for="filter__pink">Розовый</label>
-                  </li>
-                  <li class="filter__color-items">
-                    <input class="visually-hidden filter__checkbox" type="checkbox" name="orange" id="filter__orange">
-                    <label for="filter__orange">Оранжевый</label>
-                  </li>
-                </ul>
+              <ul class="filter-color__list">
+                <li class="filter-color__items">
+                  <input class="visually-hidden filter-color__checkbox" type="checkbox" name="white" id="filter-color__white" checked>
+                  <label for="filter-color__white">Белый</label>
+                </li>
+                <li class="filter-color__items">
+                  <input class="visually-hidden filter-color__checkbox" type="checkbox" name="gray" id="filter-color__gray" checked>
+                  <label for="filter-color__gray">Серый</label>
+                </li>
+                <li class="filter-color__items">
+                  <input class="visually-hidden filter-color__checkbox" type="checkbox" name="tiffany" id="filter-color__tiffany">
+                  <label for="filter-color__tiffany">"Тиффани"</label>
+                </li>
+                <li class="filter-color__items">
+                  <input class="visually-hidden filter-color__checkbox" type="checkbox" name="black" id="filter-color__black">
+                  <label for="filter-color__black">Черный</label>
+                </li>
+                <li class="filter-color__items">
+                  <input class="visually-hidden filter-color__checkbox" type="checkbox" name="pink" id="filter-color__pink">
+                  <label for="filter-color__pink">Розовый</label>
+                </li>
+                <li class="filter-color__items">
+                  <input class="visually-hidden filter-color__checkbox" type="checkbox" name="orange" id="filter-color__orange">
+                  <label for="filter-color__orange">Оранжевый</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="full-name">
               <legend class="full-name__title">ФИО</legend>
@@ -160,15 +158,17 @@
               <p class="wishes-text__title">ДОП</p><span class="scale"></span>
               <textarea rows="7" cols="30" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <p class="filter__text">*Поля обязательны для заполнения</p>
-            <button class="filter__button" type="submit">Отправить Заказ</button>
+            <div class="filter__wrapper">
+              <p class="filter__text">*Поля обязательны для заполнения</p>
+              <button class="filter__button" type="submit">Отправить Заказ</button>
+            </div>
           </form>
         </section>
       </div>
     </main>
     <footer class="page__footer container">
       <div class="footer">
-        <a class="visually-hidden">
+        <a class="footer__logo not-show">
           Логотип Мишки
         </a>
         <h2 class="visually-hidden"> Социальные сети</h2>
@@ -212,7 +212,6 @@
           </li>
         </ul>
         <div class= "footer__copyright">
-          <h2 class="visually-hidden">Разработчик</h2>
           <a class="footer__copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">Разработанно
             <img src="img/htmlacademy.svg" width="27" height="34" alt="значек HTML Academy">
           </a>
