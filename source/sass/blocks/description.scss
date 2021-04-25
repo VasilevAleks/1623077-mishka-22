@@ -13,12 +13,29 @@
   text-align: center;
   padding-top: 74px;
   margin-left: -29px;
+  margin-right: -29px;
+
+  @media (min-width: $tablet-width) {
+    height: 226px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 272px;
+  }
 }
 
 .description__form {
-  margin-top: 36px;
+  margin-top: 17px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 98px;
+  }
 }
