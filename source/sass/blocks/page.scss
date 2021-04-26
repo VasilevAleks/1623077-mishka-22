@@ -18,3 +18,16 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
+.page__title {
+  @include style-none;
+  display: flex;
+  height: 177px;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: $bg-form;
+  align-items: center;
+  justify-content: center;
+  margin-left: -29px;
+  margin-right: -29px;
+}
