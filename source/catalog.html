@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page__header">
       <div class="container">
-        <div class="page-header current">
+        <div class="page-header">
           <h1 class="visually-hidden">
             "Магазин "Мишка"
           </h1>
@@ -55,14 +56,12 @@
                   Бесплатная доставка по России
                 </a>
               </li>
-            </ul>
-            <ul class="main-nav__list sub-menu">
-              <li class="main-nav__item">
+              <li class="main-nav__item sub-menu">
                 <a class="main-nav__link" href="#">
                   Новые поступления
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item sub-menu">
                 <a class="main-nav__link" href="#">
                   Распродажа
                 </a>
@@ -70,33 +69,33 @@
             </ul>
           </div>
         </nav>
-        <div class="page-header">
+        <div class="page-header not-show">
           <a class="page-header__logo" href="index.html">
             <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </a>
           <button class="page-header__toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
       </div>
-    </header>
+  </header>
     <main class="page__main">
         <div class="container">
+          <h2 class="page__title">
+            Каталог товаров
+          </h2>
           <section class="goods">
-            <h2 class="goods__title">
-              Каталог товаров
-            </h2>
             <ul class="goods__list">
               <li class="goods__items">
                 <a class="goods__link">
                   <img src="img/catalog/photo-1.png" width="260" height="195" alt="Зайчик-попрыгайчик">
-                  <div class="goods__description">
-                    <h3 class="goods__description-title">
-                      Зайчик-попрыгайчик
-                    </h3>
-                    <p class="goods__description-specification">
-                      Рост 30 см, вес 200 г
-                    </p>
-                  </div>
                 </a>
+                <div class="goods__description">
+                  <h3 class="goods__description-title">
+                    Зайчик-попрыгайчик
+                  </h3>
+                  <p class="goods__description-specification">
+                    Рост 30 см, вес 200 г
+                  </p>
+                </div>
                 <div class="goods__description-buy">
                   <p class="goods__description-price">
                     1 200 руб.
@@ -107,15 +106,15 @@
               <li class="goods__items">
                 <a class="goods__link">
                   <img src="img/catalog/photo-2.png" width="260" height="195" alt="Корзинка для белья">
-                  <div class="goods__description">
-                    <h3 class="goods__description-title">
-                      Корзинка для белья
-                    </h3>
-                    <p class="goods__description-specification">
-                      Диаметр 15 см, высота 10 см
-                    </p>
-                  </div>
                 </a>
+                <div class="goods__description">
+                  <h3 class="goods__description-title">
+                    Корзинка для белья
+                  </h3>
+                  <p class="goods__description-specification">
+                    Диаметр 15 см, высота 10 см
+                  </p>
+                </div>
                 <div class="goods__description-buy">
                   <p class="goods__description-price">
                     690 руб.
@@ -128,15 +127,15 @@
               <li class="goods__items">
                 <a class="goods__link">
                   <img src="img/catalog/photo-3.png" width="260" height="195" alt="Большая корзинка для игрушек">
-                  <div class="goods__description">
-                    <h3 class="goods__description-title">
-                      Большая корзинка для игрушек
-                    </h3>
-                    <p class="goods__description-specification">
-                      Диаметр 30 см, высота 30 см
-                    </p>
-                  </div>
                 </a>
+                <div class="goods__description">
+                  <h3 class="goods__description-title">
+                    Большая корзинка для игрушек
+                  </h3>
+                  <p class="goods__description-specification">
+                    Диаметр 30 см, высота 30 см
+                  </p>
+                </div>
                 <div class="goods__description-buy">
                   <p class="goods__description-price">
                     1 500 руб.
@@ -147,9 +146,6 @@
             </ul>
           </section>
           <section class="process">
-            <a class="visually-hidden" href="#">
-              <img src="img/catalog/video-mobile-1.png" width="260" height="150" alt="Видео">
-            </a>
             <h2 class="process__title">
               Процесс производства
             </h2>
@@ -165,7 +161,7 @@
     </main>
     <footer class="page__footer container">
       <div class="footer">
-        <a class="visually-hidden">
+        <a class="footer__logo not-show">
           Логотип Мишки
         </a>
         <h2 class="visually-hidden"> Социальные сети</h2>
@@ -209,7 +205,6 @@
           </li>
         </ul>
         <div class= "footer__copyright">
-          <h2 class="visually-hidden">Разработчик</h2>
           <a class="footer__copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">Разработанно
             <img src="img/htmlacademy.svg" width="27" height="34" alt="значек HTML Academy">
           </a>
