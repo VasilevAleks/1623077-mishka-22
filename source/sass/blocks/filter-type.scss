@@ -72,3 +72,12 @@
   border-radius: 50%;
   background-color: $main-bg-color;
 }
+
+.filter-type__input:hover + label::before {
+  border: 2px solid #62d1ba;
+}
+
+.filter-type__input:active + label::before {
+  border: 2px solid #000000;
+  opacity: 0.3;
+}

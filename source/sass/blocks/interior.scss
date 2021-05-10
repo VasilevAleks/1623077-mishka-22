@@ -1,3 +1,25 @@
 .interior {
-  background: $sub-bg-color url("../img/bg/interior.svg") no-repeat center  left 95%;
+  background: $sub-bg-color;
+
+  & svg {
+    position: absolute;
+    right: 50px;
+  }
+
+  &:hover {
+    background-color: #59d5bc;
+
+    & svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    background-color: #59d5bc;
+
+    & svg {
+
+      opacity: 0.3;
+    }
+  }
 }

@@ -43,4 +43,14 @@
     grid-column: 1/2;
     grid-row: 1/-1;
   }
+
+  &:hover {
+    background-color: $sub-color;
+    color: $main-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $sub-color;
+  }
 }

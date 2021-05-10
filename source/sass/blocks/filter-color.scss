@@ -83,3 +83,12 @@
   height: 16px;
   background: url("../../img/icons/check-box-tick.svg") no-repeat;
 }
+
+.filter-color__checkbox:hover + label::before {
+  border: 2px solid #62d1ba;
+}
+
+.filter-color__checkbox:active + label::before {
+  border: 2px solid $sub-color;
+  opacity: 0.3;
+}

@@ -30,4 +30,35 @@
   justify-content: center;
   margin-left: -29px;
   margin-right: -29px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 226px;
+
+    &::before {
+      content: "";
+      height: 24px;
+      width: 100%;
+      bottom: -5px;
+      left: 1px;
+      position: absolute;
+      background: url("../img/bg/zigzag-fill-tablet.svg") repeat-x bottom;
+      z-index: 10;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 272px;
+
+    &::before {
+      content: "";
+      height: 34px;
+      width: 100%;
+      bottom: -15px;
+      position: absolute;
+      left: 1px;
+      background: url("../img/bg/zigzag-fill-desktop.svg") repeat-x bottom;
+      z-index: 10;
+    }
+  }
 }

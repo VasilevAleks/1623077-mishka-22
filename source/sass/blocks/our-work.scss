@@ -1,10 +1,10 @@
 .our-work {
   height: 506px;
   background: url("../img/bg/main-bg.png") no-repeat center top;
-  background-size: 320px 506px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .our-work h2 {
@@ -18,12 +18,37 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+
+    &::after {
+      content: "";
+      height: 24px;
+      width: 100%;
+      bottom: -5px;
+      position: absolute;
+      background: url("../img/bg/zigzag-fill-tablet.svg") repeat-x bottom;
+      z-index: 10;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      height: 34px;
+      width: 100%;
+      bottom: -15px;
+      position: absolute;
+      background: url("../img/bg/zigzag-fill-desktop.svg") repeat-x bottom;
+      z-index: 10;
+    }
   }
 }
+
 
 .our-work__button {
   height: 103px;
@@ -34,8 +59,16 @@
   margin: 0 0 0 0;
   color: $main-white;
   border: none;
+  font-weight: 700;
+  position: relative;
+
+  &:hover {
+    height: 108px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

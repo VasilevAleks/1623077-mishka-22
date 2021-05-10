@@ -75,7 +75,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
   }
 
   &:nth-child(5)::before {
@@ -86,7 +86,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
   }
 
   &:last-child::before {
@@ -97,7 +97,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
   }
 
   @media (min-width: $tablet-width) {

@@ -27,22 +27,21 @@
 }
 
 .full-name__about {
-  & :first-child {
+  &:first-child {
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
       grid-row: 1/2;
-      background-color: firebrick;
     }
   }
 
-  & :nth-child(2) {
+  &:nth-child(2) {
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
       grid-row: 2/3;
     }
   }
 
-  & :last-child {
+  &:last-child {
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
       grid-row: 3/4;
@@ -56,15 +55,34 @@
 }
 
 .full-name__name-input {
+  outline: none;
   border: none;
-  border-bottom: 2px solid $sub-color;
+  box-shadow: inset 0 -2px 0 #000000;
   height: 52px;
 
-  & ::placeholder {
+  &::placeholder {
     font-weight: 400;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     width: 80%;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+}
+
+.full-name__name-input:hover::placeholder,
+.full-name__name-input:active::placeholder {
+  border: none;
+}
+
+.full-name__name-input:active::placeholder {
+  opacity: 1;
+  color: $sub-color;
 }

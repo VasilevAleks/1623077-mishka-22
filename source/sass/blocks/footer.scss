@@ -11,6 +11,17 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
   }
+
+  & svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
 }
 
 .footer__social-net {
@@ -24,6 +35,19 @@
 
 
     margin-top: 0;
+  }
+}
+
+.footer__button-network {
+  & svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -41,4 +65,19 @@
 .footer__copyright-button {
   font-size: 19px;
   line-height: 18px;
+  font-weight: 700;
+
+  & img {
+    width: 27px;
+    height: 34px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
 }

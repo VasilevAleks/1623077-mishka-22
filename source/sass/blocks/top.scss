@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-left: 29px;
   margin-right: 29px;
+  position: relative;
 
   & img {
     align-self: center;
@@ -13,6 +14,28 @@
     grid-template-columns: max-content 1fr;
     grid-template-rows: min-content min-content  min-content  min-content;
     column-gap: 42px;
+  }
+
+  &::after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    bottom: -10px;
+    position: absolute;
+    background: url("../img/bg/zigzag-top-mobile.svg") repeat-x bottom;
+    z-index: 10;
+
+    @media (min-width: $tablet-width) {
+      bottom: -20px;
+      height: 17px;
+      background: url("../img/bg/zigzag-top-tablet.svg") repeat-x bottom;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -30px;
+      height: 23px;
+      background: url("../img/bg/zigzag-top-desktop.svg") repeat-x bottom;
+    }
   }
 }
 
@@ -45,6 +68,12 @@
   line-height: 20px;
   color: $sub-bg-color;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 34px;
+    width: 100px;
+    text-align: center;
+  }
 }
 
 
@@ -145,4 +174,19 @@
   padding-bottom: 16px;
   border: 2px solid $sub-color;
   background-color: $main-white;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  &:hover {
+    background-color: $sub-color;
+    color: $main-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $sub-color;
+  }
 }
