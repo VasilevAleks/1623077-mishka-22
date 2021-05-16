@@ -27,6 +27,15 @@ a {
 
 .not-show {
   display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  top: -78px;
 }
 
 $sub-color:#444444;
@@ -39,5 +48,5 @@ $border-top:#ececec;
 $bg-footer:#f1f1f1;
 
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1150px;
 $mobile-width-only: 767px;

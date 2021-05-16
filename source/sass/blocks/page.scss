@@ -1,5 +1,6 @@
 .page__body {
-  min-width: 320px;
+  list-style: none;
+  min-width: 304px;
   height: 100%;
   font-size: 17px;
   font-weight: 700;
@@ -8,6 +9,8 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .page__footer {
@@ -31,9 +34,18 @@
   margin-left: -29px;
   margin-right: -29px;
   position: relative;
+  top: -9px;
+  padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     height: 226px;
+    margin-bottom: -5px;
+    font-size: 43px;
+    line-height: 50px;
+    top: -75px;
+    left: -2px;
+    padding-right: 0;
+    padding-top: 10px;
 
     &::before {
       content: "";
@@ -48,7 +60,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 272px;
+    height: 240px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 10px;
+    top: -70px;
+
+    padding-top: 0;
 
     &::before {
       content: "";

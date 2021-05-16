@@ -2,11 +2,18 @@
 .filter-color {
   border: 0 none;
   position: relative;
+  margin-top: -30px;
 
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
     background-color: $bg-form;
+    margin-top: 13px;
+    margin-right: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 85px;
   }
 }
 
@@ -16,23 +23,50 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $sub-bg-color;
+  position: relative;
+  left: -10px;
+  top: 2px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 9px;
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px solid $main-bg-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     float: left;
-    margin-top: 30px;
+    margin-top: 54px;
     padding-right: 150px;
+    margin-left: 13px;
+    left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+    left: 55px;
+    top: 5px;
   }
 }
 
 
 .filter-color__list {
   @include style-none;
+  position: relative;
+
+  left: -5px;
 
   @media (min-width: $tablet-width) {
     height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
   }
@@ -46,20 +80,30 @@
 .filter-color__items {
   position: relative;
   margin-left: 61px;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
 
   &:first-child {
-    margin-top: 35px;
+    margin-top: 30px;
 
     @media (min-width: $tablet-width) {
       margin-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 5px;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 166px;
     margin-top: 60px;
-    margin-bottom: 0;
+    margin-bottom: -13px;
+    font-size: 19px;
+    margin-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 25px;
   }
 }
 
@@ -67,21 +111,34 @@
 .filter-color__checkbox + label::before {
   content: "";
   position: absolute;
-  left: -60px;
-  bottom: -13px;
-  width: 38px;
-  height: 38px;
+  left: -64px;
+  bottom: -7px;
+  width: 35px;
+  height: 35px;
   border: 2px solid $sub-color;
+
+  @media (min-width: $tablet-width) {
+    width: 51px;
+    height: 51px;
+    left: -86px;
+  }
 }
 
 .filter-color__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  left: -50px;
-  bottom: 0;
+  left: -54px;
+  bottom: 5px;
   width: 23px;
   height: 16px;
   background: url("../../img/icons/check-box-tick.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    bottom: 6px;
+    left: -72px;
+    width: 32px;
+    height: 22px;
+  }
 }
 
 .filter-color__checkbox:hover + label::before {

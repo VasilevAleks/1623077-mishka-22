@@ -3,10 +3,15 @@
 .filter-type {
   border: 0 none;
   position: relative;
-
+  margin-top: 30px;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -16,11 +21,33 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $sub-bg-color;
+  position: relative;
+  left: -10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 9px;
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px solid $main-bg-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     float: left;
-    margin-top: 30px;
+    margin-top: 20px;
+    left: 7px;
     padding-right: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 70px;
+    top: -2px;
   }
 }
 
@@ -36,41 +63,63 @@
 
 .filter-type__radio {
   position: relative;
-  margin-left: 61px;
+  margin-left: 51px;
   margin-bottom: 24px;
+  margin-right: 60px;
+  bottom: 20px;
+  line-height: 18px;
 
   &:first-child {
-    margin-top: 35px;
+    margin-top: 45px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 32px;
+      font-size: 19px;
+      margin-bottom: 65px;
+      margin-left: 70px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+
+    margin-left: 70px;
   }
 }
 
-
-.filter-type__for-child,
-.filter-type__for-home {
-  line-height: 18px;
-}
 
 .filter-type__input + label::before {
   content: "";
   position: absolute;
   left: -60px;
-  bottom: -13px;
-  width: 41px;
-  height: 41px;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
   border: 2px solid $sub-color;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -76px;
+    bottom: -18px;
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .filter-type__input:checked + label::after {
   content: "";
   position: absolute;
-  left: -50px;
-  bottom: -3px;
-  width: 21px;
-  height: 21px;
-  border: 2px solid $main-bg-color;
+  left: -47px;
+  bottom: 12px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $main-bg-color;
   border-radius: 50%;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    left: -63px;
+    bottom: -6px;
+  }
 }
 
 .filter-type__input:hover + label::before {

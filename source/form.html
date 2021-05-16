@@ -3,9 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("/img/Mobile-form.png");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        html {
+          /* Планшетный макет */
+          background-image: url("/img/Tablet-form.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 960px) {
+        html {
+          /* Десктопный макет */
+          background-image: url("/img/Desktop-form.png");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
+    <script src="js/scrwipt.js"></script>
     <header class="page__header">
       <div class="container">
         <div class="page-header">
@@ -14,9 +40,9 @@
           </h1>
           <a class="page-header__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/icons/mishka-logo-desktop.svg">
+              <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg">
-              <img src="img/mishka-logo-mobile.svg" alt="Лого Мишка">
+              <img src="img/mishka-logo-mobile.svg" alt="Логотип Мишка">
             </picture>
           </a>
           <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
@@ -26,7 +52,7 @@
             <ul class="main-nav__list main-menu">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">
-                  Каталог товаров
+                Каталог товаров
                 </a>
               </li>
               <li class="main-nav__item">
@@ -72,14 +98,16 @@
             </ul>
           </div>
         </nav>
-        <div class="page-header not-show">
-          <a class="page-header__logo" href="index.html">
-            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-          </a>
-          <button class="page-header__toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
       </div>
-  </header>
+    <div class="page-header not-show">
+      <div class="container ">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+        </a>
+        <button class="page-header__toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+    </div>
+    </header>
     <main class="page__main">
       <div class="container">
         <div class="description">
@@ -93,7 +121,7 @@
         <section class="filter">
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-type">
-              <legend class="filter-type__name">ТИП</legend><span class="scale"></span>
+              <legend class="filter-type__name">ТИП</legend>
               <ul class="filter-type__list">
                 <li class="filter-type__radio">
                   <input class="visually-hidden filter-type__input" type="radio" name="interior" id="filter-type__for-home" checked>
@@ -107,7 +135,6 @@
             </fieldset>
             <fieldset class="filter-color">
               <legend class="filter-color__name">ЦВЕТ</legend>
-              <span class="scale"></span>
               <ul class="filter-color__list">
                 <li class="filter-color__items">
                   <input class="visually-hidden filter-color__checkbox" type="checkbox" name="white" id="filter-color__white" checked>
@@ -137,7 +164,6 @@
             </fieldset>
             <fieldset class="full-name">
               <legend class="full-name__title">ФИО</legend>
-              <span class="scale"></span>
               <p class="full-name__about">
                 <label class="full-name__name" for="name">Имя:</label>
                 <input class="full-name__name-input" id="name" type="text" name="contacts-name" placeholder="Введите ваше имя*">
@@ -153,15 +179,15 @@
             </fieldset>
             <fieldset class="feedback">
               <legend class="visually-hidden">Для обратной связи</legend>
-                <label class="feedback__contacts" for="phone">ТЕЛ</label><span class="scale"></span>
+                <label class="feedback__contacts" for="phone">ТЕЛ</label>
                 <input class="feedback__contacts-input" id="phone" type="number" name="feedback-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <img class="feedback__contacts-phone" src="img/icons/phone.svg" width="25" height="25" alt="Трубка">
-                <label class="feedback__contacts" for="email">E-MAIL</label><span class="scale"></span>
+                <label class="feedback__contacts" for="email">E-MAIL</label>
                 <input class="feedback__contacts-input" id="email" type="email" name="feedback-email" placeholder="Ваш Email*">
                 <img class="feedback__contacts-mail" src="img/icons/mail.svg" width="25" height="25" alt="почта">
             </fieldset>
             <div class="wishes-text">
-              <p class="wishes-text__title">ДОП</p><span class="scale"></span>
+              <p class="wishes-text__title">ДОП</p>
               <textarea rows="7" cols="30" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
             <div class="filter__wrapper">
@@ -172,9 +198,9 @@
         </section>
       </div>
     </main>
-    <footer class="page__footer container">
+   <footer class="page__footer">
       <div class="footer">
-        <a class="footer__logo not-show" href="#">
+        <a class="footer__logo" href="#">
           <span class="visually-hidden">Логотип Мишки</span>
           <svg width="102" height="34" viewBox="0 0 102 34" fill="#000000" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2204 21.3813C19.1204 18.6962 18.7204 16.1105 18.7204 13.4255C18.7204 11.2376 19.1204 9.04976 18.3204 6.96135C18.3204 6.76246 18.4204 6.46411 18.4204 6.26522C18.6204 5.27074 15.1204 5.76798 14.6204 6.76246C14.3204 7.0608 14.1204 7.35914 14.2204 7.75694C14.2204 7.85638 14.3204 7.95583 14.3204 8.05528C13.6204 11.2376 12.7204 14.3205 11.7204 17.4034C11.3204 18.5967 10.8204 19.6907 10.4204 20.884C9.82041 19.7901 9.22041 18.6962 8.82041 17.5028C7.42041 14.1216 6.22041 10.6409 4.52041 7.35914C4.72041 5.86743 1.32041 5.96688 0.620408 7.35914C-0.179592 9.04976 -0.0795918 10.7404 0.220408 12.5304C0.520408 14.5194 0.620408 16.5083 0.620408 18.5967C0.620408 22.5746 1.02041 26.4531 1.02041 30.431C0.620408 30.8288 0.520408 31.326 0.920408 31.8233C1.12041 32.0222 1.32041 32.2211 1.52041 32.3205C2.52041 33.0167 5.12041 32.42 5.12041 31.0277C5.12041 26.9503 4.82041 22.873 4.72041 18.6962C4.72041 18.2984 4.72041 17.9006 4.72041 17.5028C4.82041 17.6023 4.82041 17.8012 4.92041 17.9006C5.52041 19.4918 6.22041 21.0829 7.12041 22.5746C8.02041 24.0664 8.42041 25.6575 8.92041 27.2487C8.72041 27.4476 8.62041 27.7459 8.72041 27.9448C8.72041 28.1437 8.82041 28.2432 9.02041 28.3426C9.62041 28.8399 10.8204 28.641 11.5204 28.3426C11.8204 28.2432 12.1204 28.0443 12.3204 27.9448C12.6204 27.7459 13.2204 27.2487 13.0204 26.7514C13.0204 26.652 12.9204 26.5526 12.9204 26.4531C13.4204 25.1603 13.6204 23.8675 13.9204 22.5746C14.2204 21.1824 14.7204 19.7901 15.2204 18.4973C15.3204 19.094 15.3204 19.6907 15.4204 20.3868C15.6204 22.9724 15.4204 25.4586 15.4204 27.9448C15.4204 28.7404 15.5204 29.536 15.6204 30.431C15.7204 30.7294 16.0204 32.2211 15.9204 32.3205C15.1204 32.8178 15.3204 33.4144 16.1204 33.6133C17.0204 33.8122 18.2204 33.5139 18.9204 32.9172C20.1204 31.8233 19.5204 30.1327 19.3204 28.7404C18.8204 26.3537 19.3204 23.768 19.2204 21.3813Z" />

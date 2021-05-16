@@ -1,17 +1,54 @@
 .our-work {
   height: 506px;
-  background: url("../img/bg/main-bg.png") no-repeat center top;
+  background-image: url("../img/bg/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
+  width: auto;
+
+  outline: 5px solid firebrick;
+
+  @media (min-width: $tablet-width) {
+
+    height: 660px;
+    background-image: url("../img/bg/main-bg-tablet-1@.png");
+  }
+
+  @media (min-width: $desktop-width) {
+
+    height: 660px;
+    background-image: url("../img/bg/hero-desktop-1@.png");
+    background-position: 10px -80px;
+  }
 }
 
 .our-work h2 {
   font-size: 27px;
   line-height: 30px;
+  align-self: center;
   text-align: center;
-  margin-top: 73px;
+  margin-bottom: 17px;
+  width: 310px;
+  overflow: hidden;
+  margin-top: 65px;
+
+  outline: 5px solid firebrick;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .our-work__wrapper {
@@ -19,11 +56,16 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+  top: 15px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin-left: 30px;
+    padding-bottom: 0;
+
 
     &::after {
       content: "";
@@ -53,7 +95,7 @@
 .our-work__button {
   height: 103px;
   text-align: start;
-  padding: 24px 100px 31px 30px;
+  padding: 24px 110px 38px 20px;
   font-size: 19px;
   line-height: 24px;
   margin: 0 0 0 0;
@@ -62,13 +104,19 @@
   font-weight: 700;
   position: relative;
 
+
   &:hover {
     height: 108px;
+
+    @media (min-width: $tablet-width) {
+      height: 131px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 20px;
     line-height: 30px;
+    height: 126px;
   }
 }
