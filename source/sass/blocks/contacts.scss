@@ -98,7 +98,7 @@
   @media (min-width: $tablet-width) {
 
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {

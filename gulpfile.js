@@ -101,7 +101,6 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-
 // Copy
 
 const copy = (done) => {
