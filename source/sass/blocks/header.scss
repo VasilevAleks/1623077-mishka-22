@@ -1,9 +1,7 @@
 .page-header {
-  margin-top: 18px;
-  width: 320px;
+  margin-top: 25px;
   text-align: center;
   height: 61px;
-  outline: 5px solid tomato;
   position: relative;
 
 
@@ -15,14 +13,23 @@
   }
 }
 
+.page-header__wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
 .page-header__toggle-close {
   height: 20px;
   width: 21px;
   border: none;
   background: url("../img/icons/menu-close.svg") no-repeat;
   text-align: right;
-  right: 26px;
-  outline: 5px solid tomato;
+  right: 0;
+  top: 5px;
   position: absolute;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +44,6 @@
   border: none;
   background: url("../img/icons/menu-open.svg") no-repeat;
   text-align: end;
-  outline: 5px solid tomato;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -46,8 +52,7 @@
 
 .page-header__logo:nth-child(1) picture {
   position: relative;
-  left: 50%;
-  outline: 5px solid tomato;
+  left: 25%;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -55,8 +60,8 @@
 }
 
 .page-header__logo:nth-child(2) {
+  position: relative;
 
-  outline: 5px solid tomato;
 
   @media (min-width: $tablet-width) {
     width: 114px;

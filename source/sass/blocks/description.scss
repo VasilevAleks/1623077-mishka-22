@@ -12,20 +12,21 @@
   background-color: $bg-form;
   text-align: center;
   padding-top: 74px;
-  margin-left: -29px;
-  margin-right: -29px;
+  padding-left: 48px;
   position: relative;
   top: -10px;
   left: -25px;
   z-index: 11;
 
   @media (min-width: $tablet-width) {
-    height: 226px;
-    padding-bottom: 80px;
+    height: 266px;
     font-size: 43px;
     line-height: 50px;
-    top: -50px;
-    left: -2px;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    top: -75px;
+    left: 0;
 
 
     &::before {
@@ -46,7 +47,6 @@
     line-height: 57px;
     padding-bottom: 98px;
     top: -80px;
-
     padding-top: 104px;
 
     &::before {
@@ -63,22 +63,24 @@
 }
 
 .description__form {
-  margin-top: 17px;
+  margin-top: 10px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 29px;
   position: relative;
   width: 260px;
-  top: 28px;
-  left: 7px;
+  top: 10px;
+  left: 2px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
     font-size: 17px;
     line-height: 30px;
-    margin-top: 0;
-    top: 0;
+    margin-top: -20px;
+    top: 10px;
     left: 25px;
   }
 
@@ -86,7 +88,7 @@
     height: 98px;
     min-width: 720px;
     margin-bottom: 25px;
-    margin-left: 175px;
-    top: 35px;
+    margin-left: 195px;
+    top: 45px;
   }
 }

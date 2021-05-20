@@ -4,6 +4,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 2px;
+}
+
+.about__wrapper {
+  margin-right: 30px;
+  margin-left: 30px;
 
   @media (min-width: $tablet-width) {
     margin-top: 80px;
@@ -11,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 110px;
-    margin-left: 234px;
+    margin-left: 207px;
   }
 }
 
@@ -25,6 +30,7 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 96px;
+    margin-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +48,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +61,6 @@
 .about__item {
   margin-bottom: 83px;
   position: relative;
-  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -21,7 +21,7 @@
   color: $sub-bg-color;
   position: relative;
   top: 5px;
-  left: -7px;
+  left: -15px;
 
   &::after {
     content: "";
@@ -40,8 +40,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/-1;
-    top: 55px;
-    left: 8px;
+    top: 75px;
+    left: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,8 +52,14 @@
 
 .full-name__about {
 
-  margin-top: 13px;
-  margin-bottom: 3px;
+  margin-left: -15px;
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+    margin-top: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
@@ -68,6 +74,7 @@
 
   &:nth-child(2) {
     @media (min-width: $tablet-width) {
+      margin-top: 20px;
       grid-column: 2/3;
       grid-row: 1/2;
     }
@@ -75,6 +82,7 @@
 
   &:last-child {
     @media (min-width: $tablet-width) {
+      margin-top: 18px;
       grid-column: 2/3;
       grid-row: 3/4;
     }
@@ -91,7 +99,7 @@
 .full-name__name-input {
   outline: none;
   border: none;
-  border-bottom: 2px solid  #000000;
+  border-bottom: 2px solid  $black;
   height: 52px;
   width: 100%;
 
@@ -108,7 +116,7 @@
   &:focus,
   &:active {
     outline: none;
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $main-bg-color;
   }
 }
 

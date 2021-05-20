@@ -3,104 +3,78 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <style>
-      html {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url("/img/Mobile.png");
-      }
-      /* Планшет */
-      @media (min-width: 768px) {
-        html {
-          /* Планшетный макет */
-          background-image: url("/img/Tablet.png");
-        }
-      }
-      /* Десктоп */
-      @media (min-width: 960px) {
-        html {
-          /* Десктопный макет */
-          background-image: url("/img/Desktop.png");
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icons/ico/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/ico/32.png">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
-    <script src="js/scrwipt.js"></script>
     <header class="page__header">
-        <div class="container">
-          <div class="page-header">
-            <h1 class="visually-hidden">
-              "Магазин "Мишка"
-            </h1>
-            <a class="page-header__logo" href="index.html">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg">
-                <img src="img/mishka-logo-mobile.svg" alt="Логотип Мишка">
-              </picture>
-            </a>
-            <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-          </div>
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list main-menu">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="catalog.html">
-                  Каталог товаров
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">
-                    Вязание на заказ
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="#000000" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
-                      <path  d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"/>
-                    </svg>
-                    <span>
-                      Поиск по сайту
-                    </span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">
-                    <svg  width="21" height="18" viewBox="0 0 21 18" fill="#000000" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
-                      <path  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
-                    </svg>
-                    <span>
-                      Корзина:пока пуста
-                    </span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">
-                    Бесплатная доставка по России
-                  </a>
-                </li>
-                <li class="main-nav__item sub-menu">
-                  <a class="main-nav__link" href="#">
-                    Новые поступления
-                  </a>
-                </li>
-                <li class="main-nav__item sub-menu">
-                  <a class="main-nav__link" href="#">
-                    Распродажа
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header">
+          <h1 class="visually-hidden">
+            "Магазин "Мишка"
+          </h1>
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg">
+              <img src="img/mishka-logo-mobile.svg" alt="Логотип Мишка">
+            </picture>
+          </a>
+          <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         </div>
-      <div class="page-header not-show">
-        <div class="container ">
+        <nav class="main-nav">
+            <ul class="main-nav__list main-menu">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">
+                Каталог товаров
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">
+                  Вязание на заказ
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="#000000" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                    <path  d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"/>
+                  </svg>
+                  <span>
+                    Поиск по сайту
+                  </span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  <svg  width="21" height="18" viewBox="0 0 21 18" fill="#000000" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                    <path  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
+                  </svg>
+                  <span>
+                    Корзина:пока пуста
+                  </span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  Бесплатная доставка по России
+                </a>
+              </li>
+              <li class="main-nav__item sub-menu">
+                <a class="main-nav__link" href="#">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="main-nav__item sub-menu">
+                <a class="main-nav__link" href="#">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+        </nav>
+        <div class="page-header not-show">
           <a class="page-header__logo" href="index.html">
             <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </a>
@@ -133,116 +107,122 @@
           </button>
         </div>
       </section>
-      <section class="top container">
-        <div class="top__title">
-          <h2 class="top__item">
-            Вязаные корзинки
+      <section class="top">
+        <div class="top__wrapper">
+          <div class="top__title">
+            <h2 class="top__item">
+              Вязаные корзинки
+            </h2>
+            <span class="top__week">
+              ТОВАР НЕДЕЛИ
+            </span>
+          </div>
+          <p class="top__description" >
+            Экологически чистая пряжа,<br>
+            ручная работа. Доступны в шести<br>
+            расцветках, и трех размерах.
+          </p>
+          <table class="top__specifications">
+            <tr>
+              <th>
+                Цвет:
+              </th>
+              <td>
+                "Тиффани"/серый
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Диаметр:
+              </th>
+              <td>
+                25 см
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Высота:
+              </th>
+              <td>
+                15 см
+              </td>
+            </tr>
+          </table>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/catalog/triple-set-desktop.jpg 1x, img/catalog/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/triple-set-tablet.jpg 1x, img/catalog/triple-set-tablet@2x.jpg 2x">
+            <img src="img/catalog/triple-set-mobile1.png" srcset="img/catalog/triple-set-mobile@2x.jpg 2x"  alt="Вязанная корзинка">
+          </picture>
+          <div class="top__buy">
+            <span class="top__price"> Цена: 990 руб.</span>
+            <button class="top__button" type="button">Заказать</button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="about__tittle">
+            Коротко о нас:
           </h2>
-          <span class="top__week">
-            ТОВАР НЕДЕЛИ
-          </span>
-        </div>
-        <p class="top__description" >
-          Экологически чистая пряжа,<br>
-          ручная работа. Доступны в шести<br>
-          расцветках, и трех размерах.
-        </p>
-        <table class="top__specifications">
-          <tr>
-            <th>
-              Цвет:
-            </th>
-            <td>
-              "Тиффани"/серый
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Диаметр:
-            </th>
-            <td>
-              25 см
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Высота:
-            </th>
-            <td>
-              15 см
-            </td>
-          </tr>
-        </table>
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/catalog/triple-set-desktop.jpg 1x, img/catalog/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/catalog/triple-set-tablet.jpg 1x, img/catalog/triple-set-tablet@2x.jpg 2x">
-          <img src="img/catalog/triple-set-mobile1.png" srcset="img/catalog/triple-set-mobile@2x.jpg 2x"  alt="Вязанная корзинка">
-        </picture>
-        <div class="top__buy">
-          <span class="top__price"> Цена: 990 руб.</span>
-          <button class="top__button" type="button">Заказать</button>
+          <ul class="about__list">
+            <li class="about__item">
+              Экологически<br>чистые материалы
+            </li>
+            <li class="about__item">
+              Скандинавский стиль<br>по российской цене
+            </li>
+            <li class="about__item">
+              Увеличивает лайки<br>на фотографиях
+            </li>
+            <li class="about__item">
+              Связано вручную<br>с любовью и умилением
+            </li>
+            <li class="about__item">
+              Поддрежка отечественного<br>производителя
+            </li>
+            <li class="about__item">
+              Поставляется<br>в подарочной упаковке
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="about container">
-        <h2 class="about__tittle">
-          Коротко о нас:
-        </h2>
-        <ul class="about__list">
-          <li class="about__item">
-            Экологически<br>чистые материалы
-          </li>
-          <li class="about__item">
-            Скандинавский стиль<br>по российской цене
-          </li>
-          <li class="about__item">
-            Увеличивает лайки<br>на фотографиях
-          </li>
-          <li class="about__item">
-            Связано вручную<br>с любовью и умилением
-          </li>
-          <li class="about__item">
-            Поддрежка отечественного<br>производителя
-          </li>
-          <li class="about__item">
-            Поставляется<br>в подарочной упаковке
-          </li>
-        </ul>
-      </section>
-      <section class="reviews container slider">
-        <h2 class="reviews__title">
-          Отзывы
-        </h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item not-show">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количесва лайков, как у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-              <p class="reviews__author-name"><span>Анастасия Красильникова</span>@misssssiskras</p>
-            </div>
-          </blockquote>
-          <blockquote class="reviews__item slider__item not-show">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я сестра молодой мамы,но все равно фотографии не набирали и близко такого количесва лайков, как у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <p class="reviews__author-name"><span>Екатерина Красильникова</span>@misssssiskras2</p>
-            </div>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я двоюродная сестра молодой мамы,но все равно фотографии не набирали и близко такого количесва лайков, как у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <p class="reviews__author-name"><span>Елена Красильникова</span>@misssssiskras3</p>
-            </div>
-          </blockquote>
-        </div>
+      <section class="reviews">
         <div class="reviews__wrapper">
-          <button class="reviews__button-prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-          <button class="reviews__button-next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          <h2 class="reviews__title">
+            Отзывы
+          </h2>
+          <div class="reviews__list">
+            <blockquote class="reviews__item not-show">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количесва лайков, как у популярных инстамамочек.
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                </p>
+                <p class="reviews__author-name"><span>Анастасия Красильникова</span>@misssssiskras</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item not-show">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я сестра молодой мамы,но все равно фотографии не набирали и близко такого количесва лайков, как у популярных инстамамочек.
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="reviews__author-name"><span>Екатерина Красильникова</span>@misssssiskras2</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я двоюродная сестра молодой мамы,но все равно фотографии не набирали и близко такого количесва лайков, как у популярных инстамамочек.
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="reviews__author-name"><span>Елена Красильникова</span>@misssssiskras3</p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="reviews__wrapper-button">
+            <button class="reviews__button-prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="reviews__button-next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          </div>
+          <button class="reviews__write" type="button">Написать</button>
         </div>
-        <button class="reviews__write" type="button">Написать</button>
       </section>
-      <section class="contacts container">
+      <section class="contacts">
         <h2 class="contacts__title">
           Контакты
         </h2>
@@ -320,5 +300,33 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <h2 class="visually-hidden">Всплывающее окно заказа товара</h2>
+      <div class="modal__order">
+        <h3 class="modal__title">Добавить<br>в корзину</h3>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" checked type="checkbox" name="s-value"
+                  id="s-size">
+                <label class="modal__size" for="s-size">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="checkbox" name="m-value" id="m-size">
+                <label class="modal__size" for="m-size">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="checkbox" name="l-value" id="l-size">
+                <label class="modal__size" for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__add" type="submit">Добавить</button>
+        </form>
+      </div>
+      <div class="modal__bg"></div>
+    </section>
   </body>
 </html>
