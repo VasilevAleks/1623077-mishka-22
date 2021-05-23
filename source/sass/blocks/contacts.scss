@@ -23,10 +23,25 @@
 }
 
 
-.contacts picture {
+.contacts__map {
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/5;
+  }
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 455px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
   }
 }
 
