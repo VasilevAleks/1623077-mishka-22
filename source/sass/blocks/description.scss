@@ -12,30 +12,83 @@
   background-color: $bg-form;
   text-align: center;
   padding-top: 74px;
-  margin-left: -29px;
-  margin-right: -29px;
+  padding-left: 48px;
+  position: relative;
+  top: -10px;
+  left: -25px;
+  z-index: 11;
 
   @media (min-width: $tablet-width) {
-    height: 226px;
+    height: 266px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    top: -75px;
+    left: 0;
+
+
+    &::before {
+      content: "";
+      height: 24px;
+      width: 100%;
+      bottom: -5px;
+      left: 1px;
+      position: absolute;
+      background: url("../img/bg/zigzag-fill-tablet.svg") repeat-x bottom;
+      z-index: 10;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    height: 272px;
+    height: 236px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 98px;
+    top: -80px;
+    padding-top: 104px;
+
+    &::before {
+      content: "";
+      height: 34px;
+      width: 100%;
+      bottom: -15px;
+      position: absolute;
+      left: 1px;
+      background: url("../img/bg/zigzag-fill-desktop.svg") repeat-x bottom;
+      z-index: 10;
+    }
   }
 }
 
 .description__form {
-  margin-top: 17px;
+  margin-top: 10px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 29px;
+  position: relative;
+  width: 260px;
+  top: 10px;
+  left: 2px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: -20px;
+    top: 10px;
+    left: 25px;
   }
 
   @media (min-width: $desktop-width) {
     height: 98px;
+    min-width: 720px;
+    margin-bottom: 25px;
+    margin-left: 195px;
+    top: 45px;
   }
 }

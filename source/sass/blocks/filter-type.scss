@@ -3,10 +3,14 @@
 .filter-type {
   border: 0 none;
   position: relative;
-
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -16,11 +20,34 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $sub-bg-color;
+  position: relative;
+  left: -15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 9px;
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px solid $main-bg-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     float: left;
-    margin-top: 30px;
+    margin-top: 58px;
+    left: 5px;
     padding-right: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+    padding-left: 65px;
+    padding-right: 80px;
   }
 }
 
@@ -32,43 +59,81 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -20px;
+    padding-left: 15px;
+  }
 }
 
 .filter-type__radio {
   position: relative;
-  margin-left: 61px;
+  margin-left: 45px;
   margin-bottom: 24px;
+  margin-right: 56px;
+  bottom: 15px;
+  line-height: 18px;
 
   &:first-child {
-    margin-top: 35px;
+    margin-top: 45px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 65px;
+      font-size: 19px;
+      margin-bottom: 65px;
+      margin-left: 70px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+
+    margin-left: 70px;
   }
 }
 
-
-.filter-type__for-child,
-.filter-type__for-home {
-  line-height: 18px;
-}
 
 .filter-type__input + label::before {
   content: "";
   position: absolute;
   left: -60px;
-  bottom: -13px;
-  width: 41px;
-  height: 41px;
+  bottom: 0;
+  width: 38px;
+  height: 38px;
   border: 2px solid $sub-color;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -85px;
+    bottom: -18px;
+    width: 46px;
+    height: 46px;
+  }
 }
+
 
 .filter-type__input:checked + label::after {
   content: "";
   position: absolute;
-  left: -50px;
-  bottom: -3px;
-  width: 21px;
-  height: 21px;
-  border: 2px solid $main-bg-color;
+  left: -47px;
+  bottom: 12px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $main-bg-color;
   border-radius: 50%;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    left: -69px;
+    bottom: -4px;
+    border: 3px solid $main-bg-color;
+  }
+}
+
+.filter-type__input:hover + label::before {
+  border: 2px solid #62d1ba;
+}
+
+.filter-type__input:active + label::before {
+  border: 2px solid #000000;
+  opacity: 0.3;
 }

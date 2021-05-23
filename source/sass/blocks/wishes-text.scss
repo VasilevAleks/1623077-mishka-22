@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: column;
   border: 0 none;
-  margin-left: 15px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     grid-row: 5/6;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin-top: 50px;
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 65px;
   }
 
   & textarea {
@@ -19,14 +23,40 @@
 
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
+      line-height: 19px;
+      height: 123px;
+      margin-top: 7px;
+      margin-left: 10px;
+      margin-right: 20px;
     }
 
-    & ::placeholder {
+    @media (min-width: $desktop-width) {
+      margin-left: -125px;
+    }
+
+    &::placeholder {
       font-weight: 400;
       line-height: 18px;
+      opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        font-size: 19px;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      border: 2px solid #62d1ba;
+    }
+
+    &:active::placeholder {
+      opacity: 1;
     }
   }
 }
+
 
 .wishes-text__title {
   position: relative;
@@ -35,7 +65,23 @@
   text-transform: uppercase;
   color: $sub-bg-color;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 9px;
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px solid $main-bg-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    top: 11px;
+    left: 19px;
   }
 }

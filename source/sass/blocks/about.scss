@@ -3,14 +3,40 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 29px;
-  margin-right: 29px;
+  margin-top: 2px;
+}
+
+.about__wrapper {
+  margin-right: 30px;
+  margin-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+    margin-left: 207px;
+  }
 }
 
 .about__tittle {
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700;
   margin-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 96px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
@@ -18,10 +44,16 @@
 
   @media (min-width: $tablet-width) {
 
-    height: 380px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 420px;
+    align-content: flex-start;
   }
 }
 
@@ -29,6 +61,27 @@
 .about__item {
   margin-bottom: 83px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 100px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+    width: max-content;
+    margin-left: 0;
+    margin-right: 120px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
 
   &:last-child {
     margin-bottom: 58px;
@@ -42,7 +95,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 55px;
+    left: 7px;
   }
 
   &:nth-child(2)::before {
@@ -53,7 +107,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
   }
 
   &:nth-child(3)::before {
@@ -64,7 +118,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
+    left: 7px;
   }
 
   &:nth-child(4)::before {
@@ -75,7 +130,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 55px;
+    left: 3px;
   }
 
   &:nth-child(5)::before {
@@ -86,7 +142,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
+    left: -7px;
   }
 
   &:last-child::before {
@@ -97,15 +154,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
-    bottom: 50px;
-  }
-
-  @media (min-width: $tablet-width) {
-
-    margin-bottom: 100px;
-
-    &:nth-child(3n) {
-      margin-bottom: 0;
-    }
+    bottom: 58px;
+    left: 3px;
   }
 }
